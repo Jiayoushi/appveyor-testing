@@ -1,9 +1,13 @@
 version: 1.0.{build}
 
+image: 
+  - Visual Studio 2015
+  - Visual Studio 2017
+
+
 build: false
 
 install:
   - ps: rm Alias:wget
-  - ps: choco install wget==1.19.2
-  - ps: choco install gnuwin32-sed.install
+  - ps: choco install wget
   - ps: wget www.google.com
