@@ -1,0 +1,9 @@
+version: 1.0.{build}
+
+build: false
+
+
+install:
+  - ps: rm Alias:wget
+  - ps: choco install wget
+  - ps: wget www.google.com
