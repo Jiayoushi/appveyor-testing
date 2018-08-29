@@ -4,6 +4,6 @@ build: false
 
 install:
   - ps: rm Alias:wget
-  - ps: choco install wget
+  - ps: choco install wget==1.19.2
   - ps: choco install gnuwin32-sed.install
   - ps: wget www.google.com
