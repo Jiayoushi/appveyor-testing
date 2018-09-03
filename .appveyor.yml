@@ -1,17 +1,12 @@
 version: 1.0.{build}
 
 image: 
-  - Visual Studio 2013
   - Visual Studio 2015
-  - Visual Studio 2017
-  - Previous Visual Studio 2013
-  - Previous Visual Studio 2015
-  - Previous Visual Studio 2017
-
 
 build: false
 
 install:
+  - ps: wget www.baidu.com
   - ps: rm Alias:wget
   - ps: choco install wget
-  - ps: wget www.google.com
+  - ps: wget www.baidu.com
