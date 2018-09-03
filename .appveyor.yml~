@@ -6,6 +6,7 @@ image:
 build: false
 
 install:
+  - ps: C:\cygwin64
   - ps: rm Alias:wget
   - ps: choco install wget
   - ps: wget www.baidu.com
