@@ -6,7 +6,6 @@ image:
 build: false
 
 install:
-  - ps: wget www.baidu.com
   - ps: rm Alias:wget
   - ps: choco install wget
   - ps: wget www.baidu.com
