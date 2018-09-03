@@ -6,6 +6,7 @@ image:
 build: false
 
 install:
+  - ps: ls C:\cygwin64
   - ps: C:\cygwin64
   - ps: rm Alias:wget
   - ps: choco install wget
